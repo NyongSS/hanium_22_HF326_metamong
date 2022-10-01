@@ -22,9 +22,37 @@ exports.getBoards = async (req, res, next) => {
     }
 }
 
-insertBoard
+exports.insertBoard = (req, res) => {
+    const data = req.body;
+    insertPost(data, (err, results) => {
+        if (err){
+            res.send(err);
+        }else{
+            res.json(results);
+        }
+    });
+}
 
-updateBoard
+exports.updateBoard = (req, res) => {
+    const data  = req.body;
+    const id    = req.params.id;
+    updatePostByNum(data, id, (err, results) => {
+        if (err){
+            res.send(err);
+        }else{
+            res.json(results);
+        }
+    });
+}
 
-deleteBoard
+exports.deleteBoard= (req, res) => {
+    const id = req.params.id;
+    deletePostByNum(id, (err, results) => {
+        if (err){
+            res.send(err);
+        }else{
+            res.json(results);
+        }
+    });
+}
 
