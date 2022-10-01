@@ -1,0 +1,1 @@
+//queries에서는 services에서 사용되는 쿼리s
