@@ -1,6 +1,7 @@
 var express = require('express')
 var router = express.Router()
 const BoardController = require('../controllers/board-controller')
+const db = require('../../db.js');
 
 router.get('/:boardId', BoardController.getBoard)
 router.get('/', BoardController.getBoards)

@@ -1,5 +1,5 @@
 const pool = require('../database/pool')
-const BoardQuery = require('../queries/board-query')
+const BoardQuery = require('../queries/query')
 
 exports.getBoard = async (boardId) => {
     try {
