@@ -1,6 +1,6 @@
 module.exports= (sequelize, Sequelize) => {
-    const board = sequelize.define("Board", {
-        boardID: { //friend model의 기본키는 myId와 yourId입니다.
+    const tempSearch = sequelize.define("", {
+        searchID: { 
             type: Sequelize.INTEGER,
             allowNull: false,
             primaryKey: true
@@ -11,14 +11,21 @@ module.exports= (sequelize, Sequelize) => {
             allowNull: false,
             
         },
-        content: { //내 아이디와 yourId와의 조합으로 생성된다.
+        content: { 
             type: Sequelize.STRING,
             allowNull: false
+        },
+        location: {
+            type: Sequelize.DECIMAL(13,10),
+            allowNull:false},
+        tempOn: {
+            type: Sequelize.boolean,
+            allowNull: true
         }
     },
     {
         timestamps: false,
-        tableName: 'friends'
+        tableName: 'TempSearch'
     });
-    return friends;
+    return tempSearch;
 }
