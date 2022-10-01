@@ -3,9 +3,9 @@ const mysql = require('mysql2/promise');
 //const db = require('../../database.json')
 
 var db = mysql.createConnection({
-    host: '127.0.0.1:3306',
+    host: 'localhost',
     port: 3306,
-    user: user1,
+    user: 'root',
     password: 'hanium_22_HF326_metamong',
     database: 'metamong' // mysql database
 });
