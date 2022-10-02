@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-mysql-session": "^2.1.8",
+    "express-session": "^1.17.3",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.23.2"
+  },
+  "name": "hanium_project_metamong",
+  "description": "2022년 한이음 메타버스 게시판 관련 레포지토리입니다.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NyongSS/hanium_22_HF326_metamong.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NyongSS/hanium_22_HF326_metamong/issues"
+  },
+  "homepage": "https://github.com/NyongSS/hanium_22_HF326_metamong#readme"
+}
