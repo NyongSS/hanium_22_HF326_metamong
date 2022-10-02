@@ -9,16 +9,51 @@ const db= require("../models/index.js"),
 
         };
     };
-    modele.exports={
-        index: async(req,res,next)=>{
-            try{
-                let users= await User.findAll();
-                //이런식
-            }catch(error){
-                console.log(`Error fetching users: ${error.message}`);
-                next(error);
-            };
+
+
+    const getNickname = async(id) => {
+        try{
+            data= User.findOne(
+                {
+                    where:{ userID:id }
+                }
+            )
+            return data;
+        }catch(err){
+            return err;
+
         }
     }
+
+    const getUsername = async(id) => {
+        try{
+            data= User.findOne(
+                {
+                    where:{ userID:id }
+                }
+            )
+            return data;
+        }catch(err){
+            return err;
+
+        }
+    }
+
+    const getEmail = async(id) => {
+        try{
+            data= User.findOne(
+                {
+                    where:{ userID:id }
+                }
+            )
+            return data;
+        }catch(err){
+            return err;
+
+        }
+    }
+
+
+
 
   
