@@ -6,17 +6,17 @@ var db = mysql.createConnection({
     host: 'localhost',
     port: 3306,
     user: 'root',
-    password: 'root',
+    password: 'hanium_22_HF326_metamong',
     database: 'metamong' // mysql database
 });
 
-//db.connect();
+db.connect();
 
 //동작확인용
-//db.query('SELECT * from metamong',
-//function(error, result, fields){
-//    if (error) throw error;
-//   console.log('the metamong is >>> : ', results);
-//});
+db.query('SELECT * from metamong',
+function(error, result, fields){
+    if (error) throw error;
+    console.log('the metamong is >>> : ', results);
+});
 
 module.exports = db;

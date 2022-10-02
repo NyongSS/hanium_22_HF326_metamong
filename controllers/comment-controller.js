@@ -1,3 +1,7 @@
+getComments
+
+
+insertComment
 
 
 exports.deleteComment = async (req, res, next) => {

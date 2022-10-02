@@ -1,9 +1,4 @@
-const db = require("../models");
-
-const Board = db.boards;
-
-
-//const BoardService = require('../services/board-service')
+const BoardService = require('../services/board-service')
 
 exports.getBoard = async (req, res, next) => {
     let { boardId } = req.params.boardId
