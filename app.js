@@ -15,6 +15,22 @@ app.use(express.static(__dirname + '/asset'));
 
 
 
+
+const models = require("./models/index.js");
+
+models.sequelize.sync().then( () => {
+  console.log(" DB 연결 성공");
+}).catch(err => {
+  console.log("연결 실패");
+  console.log(err);
+});
+
+
+
+
+
+
+
 //app.use('/login', loginRoutes);
 
 
@@ -29,7 +45,7 @@ app.get('/myPage', function(request, response) {
 
 //app.get('/board/:boardId', board-route);
 //app.get('/search', searchRoutes);
-
+app.listen(3000, () => console.log("Server running at http://localhost:3000"));
 
 
 module.experts = app;

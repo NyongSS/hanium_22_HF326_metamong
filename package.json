@@ -4,7 +4,8 @@
     "express-mysql-session": "^2.1.8",
     "express-session": "^1.17.3",
     "mysql2": "^2.3.3",
-    "sequelize": "^6.23.2"
+    "sequelize": "^6.23.2",
+    "sequelize-auto": "^0.8.8"
   },
   "name": "hanium_project_metamong",
   "description": "2022년 한이음 메타버스 게시판 관련 레포지토리입니다.",

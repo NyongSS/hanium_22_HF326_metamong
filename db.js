@@ -6,14 +6,14 @@ var db = mysql.createConnection({
     host: 'localhost',
     port: 3306,
     user: 'root',
-    password: 'hanium_22_HF326_metamong',
+    password: 'root',
     database: 'metamong' // mysql database
 });
 
 db.connect();
 
 //동작확인용
-db.query('SELECT * from metamong',
+db.query('SELECT * from boards',
 function(error, result, fields){
     if (error) throw error;
     console.log('the metamong is >>> : ', results);
